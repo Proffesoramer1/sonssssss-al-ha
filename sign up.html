@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول / إنشاء حساب</title>
+  <link rel="stylesheet" href="login,signup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <h1>شعار الموقع</h1>
+    </div>
+    <div class="form-container">
+      <div class="tabs">
+        <button id="login-tab" class="tab active" onclick="showForm('login')">تسجيل الدخول</button>
+        <button id="signup-tab" class="tab" onclick="showForm('signup')">إنشاء حساب</button>
+      </div>
+      <div id="login-form" class="form active">
+        <h2>تسجيل الدخول</h2>
+        <form>
+          <input type="text" placeholder="اسم المستخدم" required>
+          <input type="password" placeholder="كلمة المرور" required>
+          <button type="submit">دخول</button>
+        </form>
+      </div>
+      <div id="signup-form" class="form">
+        <h2>إنشاء حساب</h2>
+        <form>
+          <input type="text" placeholder="اسم المستخدم" required>
+          <input type="email" placeholder="البريد الإلكتروني" required>
+          <input type="password" placeholder="كلمة المرور" required>
+          <button type="submit">تسجيل</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="shape.js"></script>
+</body>
+</html>
